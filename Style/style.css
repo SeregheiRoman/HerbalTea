@@ -182,6 +182,14 @@ img.menu__list-triangl {
   position: relative;
 }
 
+.sub_line {
+  width: 212px;
+  height: 2px;
+  background-color: #d7b46a;
+  position: relative;
+  right: 15px;
+}
+
 .sub__menu {
   position: absolute;
   top: 200%;
@@ -196,7 +204,7 @@ img.menu__list-triangl {
   height: 36px;
   padding: 0px 15px;
   padding-bottom: 9px;
-  padding-top: 9px;
+  /* padding-top: 0px; */
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
@@ -209,6 +217,7 @@ img.menu__list-triangl {
   color: #d7b46a;
   align-items: flex-start;
   z-index: 15;
+  margin-top: 12px;
 }
 
 .container__inner {
