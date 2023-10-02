@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./Style/style.css" />
+    <script src="./Script/script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -69,8 +70,13 @@
                   <li class="menu__list-item">
                     <a href="#" class="menu__list-link">ГЛАВНАЯ</a>
                   </li>
-                  <li class="menu__list-item">
+                  <li id="sub_menuitem" class="menu__list-item">
                     <a href="#" class="menu__list-link">КОЛЛЕКЦИИ</a>
+                    <ul  class="sub__menu">
+                    <li><a href="">Авторские</a></li>
+                    <li><a href="">Чай со всего мира</a></li>
+                    <li><a href="">Подарочные наборы</a></li>
+                  </ul>
                   </li>
                   <li class="menu__list-item">
                     <a href="#" class="menu__list-link">ТРАВЫ</a>
@@ -122,10 +128,10 @@
         <section class="main__top">
           <div class="container__inner _container">
             <h1 class="top-title">Заваривай <br />с душой</h1>
-            <p>
+            <p class="main__franch">
               Съешь же ещё этих мягких <br />французских булок, да выпей чаю
             </p>
-            <button class="main__button">ПОДРОБНЕЕ</button>
+            <a href="#" class="main__button">ПОДРОБНЕЕ</a>
             <ul class="slider__circle">
               <li class="slider__circle-itembig"></li>
               <li class="slider__circle-item"></li>
@@ -141,12 +147,12 @@
                 Коллекция<br />
                 родом из азии
               </h2>
-              <button class="main__content-bt">ПОДРОБНЕЕ →</button>
+              <a href="#" class="main__content-bt">ПОДРОБНЕЕ →</a>
               <!-- <img src="./Style/imges/maintea1.jpg" alt="" /> -->
             </div>
             <div id="rightBlock" class="main__content-item">
               <h2>Секреты домашних <br />чаеведов</h2>
-              <button class="main__content-bt">ПОДРОБНЕЕ →</button>
+              <a href="#" class="main__content-bt">ПОДРОБНЕЕ →</a>
               <!-- <img src="./Style/imges/maintea2.jpg" alt="" /> -->
             </div>
           </div>
@@ -392,12 +398,12 @@
                 Розовый чай <br>
                под розовое  <br> настроение
               </h2>
-              <button class="main__content-bt">ПОДРОБНЕЕ →</button>
+              <a href="#" class="main__content-bt">ПОДРОБНЕЕ →</a>
               <!-- <img src="./Style/imges/maintea1.jpg" alt="" /> -->
             </div>
             <div id="rightBlock2" class="main__content-item">
               <h2>традиции чайных <br> церемоний</h2>
-              <button class="main__content-bt">ПОДРОБНЕЕ →</button>
+              <a href="#" class="main__content-bt">ПОДРОБНЕЕ →</a>
               <!-- <img src="./Style/imges/maintea2.jpg" alt="" /> -->
             </div>
           </div>

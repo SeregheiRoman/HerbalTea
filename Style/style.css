@@ -177,6 +177,40 @@ img.menu__list-triangl {
   padding-left: 5px;
 }
 
+/*  Выпадающее меню */
+.menu {
+  position: relative;
+}
+
+.sub__menu {
+  position: absolute;
+  top: 200%;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 212px;
+  height: 36px;
+  padding: 0px 15px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  font-family: Merriweather;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #d7b46a;
+  align-items: flex-start;
+  z-index: 15;
+}
+
 .container__inner {
   /* height: 700px; */
   width: 100%;
@@ -205,6 +239,35 @@ img.menu__list-triangl {
   }
 }
 
+@media (max-width: 640px) {
+  .container__inner h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 538px) {
+  .container__inner h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 538px) {
+  .container__inner h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 484px) {
+  .container__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__inner h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
 .top__title-p {
   font-family: Merriweather;
   font-size: 24px;
@@ -226,10 +289,20 @@ img.menu__list-triangl {
   padding-top: 15px;
 }
 
+@media (max-width: 484px) {
+  .container__inner p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
 .main__button {
+  background-color: #d7b46a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 155px;
   height: 56px;
-  background-color: #d7b46a;
   border: none;
   margin-top: 40px;
   font-family: Open Sans;
@@ -240,6 +313,21 @@ img.menu__list-triangl {
   letter-spacing: 2.4px;
   text-transform: uppercase;
   color: white;
+  /* cursor: pointer; */
+}
+
+/* @media (max-width: 484px) {
+  .container__inner._container {
+    align-items: center;
+    margin: 0 auto;
+  }
+} */
+
+@media (max-width: 484px) {
+  .container__inner a {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .slider__circle {
