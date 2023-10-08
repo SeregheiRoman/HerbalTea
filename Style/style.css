@@ -993,6 +993,8 @@ input::placeholder {
 }
 .bg-footer {
   background-image: url("./imges/footerbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .social__icons-footer {
   display: flex;
